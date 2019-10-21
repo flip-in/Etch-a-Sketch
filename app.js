@@ -5,7 +5,7 @@ var squareStyles = {
 }
 
 var container = document.createElement('div');
-container.setAttribute('id', 'container');
+container.setAttribute('class', 'container');
 document.body.appendChild(container);
 
 for(var i = 0; i < 16; i++){
@@ -13,8 +13,8 @@ for(var i = 0; i < 16; i++){
         container.innerHTML += '<div class="grid">' + ((i*16)+j+1) + '</div>';
         console.log("j=", j);
     }
-    var jump = document.createElement("br");
-    document.getElementById("container").appendChild(jump);
+    //var jump = document.createElement("br");
+    //document.getElementsByClassName("container")[0].appendChild(jump);
     console.log("i = ", i);
 };
 

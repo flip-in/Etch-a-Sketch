@@ -4,17 +4,13 @@ div.grid {
     border: 1pt solid black;
 }
 
-#container{
-    width: 1000px;
-    height: 1000px;
+.container{
+    display: inline-grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    gap: 0px;
+    /*grid-template-rows: repeat(16, 1fr);*/
     margin: 0 auto;
     border: 1pt solid black;
-    justify-content: end;
-}
-
-#container div{
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 auto;
 
 }
